@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
-  const FirstPage({super.key});
+  const FirstPage(this.startQuiz, {super.key});
+  final void Function() startQuiz;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -19,7 +20,9 @@ class FirstPage extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: () {
+              startQuiz();
+            },
             style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
             icon: const Icon(Icons.arrow_forward),
             label: const Text('Start Quiz!'),

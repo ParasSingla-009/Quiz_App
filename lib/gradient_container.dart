@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/first_page.dart';
+// import 'package:quiz_app/first_page.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
@@ -16,7 +16,7 @@ class GradientContainer extends StatelessWidget {
             colors: colors, begin: startAlignment, end: endAlignment),
       ),
       child:  const Center(
-        child: FirstPage()
+        // child: FirstPage(switchScreen)
       ),
     );
   }
